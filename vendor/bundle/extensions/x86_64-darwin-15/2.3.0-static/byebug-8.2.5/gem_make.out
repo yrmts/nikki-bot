@@ -1,0 +1,19 @@
+current directory: /Users/Yuri/nikki-bot/vendor/bundle/gems/byebug-8.2.5/ext/byebug
+/Users/Yuri/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20160429-82277-ysuo3m.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Yuri/nikki-bot/vendor/bundle/gems/byebug-8.2.5/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/Yuri/nikki-bot/vendor/bundle/gems/byebug-8.2.5/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/Yuri/nikki-bot/vendor/bundle/gems/byebug-8.2.5/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20160429-82277-1vqttyp/byebug
