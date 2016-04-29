@@ -1,5 +1,15 @@
 class Api::FbbotController < ApplicationController
   def callback
+    if entry = params['entry']
+      messaging_events = try[0]['messaging']
+      messaging_events.select{ |event| event['message'].present? } do |event|
+        sender_id = event['sender']['id']
+        text = event['message']['text'] if event['message']['text'].present?
+
+        parrot = Parrot.new(PAGE_ACCESS_TOKEN)
+        parrot.post(sender_id, text)
+      end
+    end
   end
 
   def verify
