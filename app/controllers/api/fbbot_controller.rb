@@ -6,7 +6,7 @@ class Api::FbbotController < ApplicationController
     if params['hub_verify_token'] === 'LEPrecon37'
       render text: params['hub.challenge']
     else
-      render nothing: true, status: ok
+      render nothing: true, status: :ok
     end
   end
 end

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :api do
       resources :fbbot do
         collection do
-          get :callback, to: :verify
+          get :callback, action: :verify
           post :callback
         end
       end
